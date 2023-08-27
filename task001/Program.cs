@@ -14,4 +14,4 @@ int TwoNumbers(int num)
     return result;
 }
 int twoNumbers = TwoNumbers(number);
-Console.WriteLine(TwoNumbers);
+Console.WriteLine(twoNumbers);
