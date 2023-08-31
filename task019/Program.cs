@@ -5,14 +5,16 @@
 12821 -> да
 23432 -> да */
 
-
-
-Console.Write("Введите пятизначное число: ");
-int number = Convert.ToInt32(Console.ReadLine());
-
-if (number < 0 || number < 10000 || number > 99999) Console.WriteLine("Введены неверные данные");
-else
+bool check(int number)
 {
+    if (number < 0 || number < 10000 || number > 99999)
+    {
+        Console.WriteLine("Введены неверные данные");
+        return false;
+    }
+    return true;
+}
+
 bool Palidrome(int num)
 {
     int firstDigit = num / 10000;
@@ -21,9 +23,20 @@ bool Palidrome(int num)
     int fourthDigit = num % 10;
     return (firstDigit == fourthDigit && secondDigit == thridDigit);
 }
-bool palidrome = Palidrome(number);
-Console.WriteLine(palidrome ? "Число является палидромом." : "Число не является палидромом.");
+
+
+
+Console.Write("Введите пятизначное число: ");
+int number = Convert.ToInt32(Console.ReadLine());
+if (check(number))
+{
+    bool palidrome = Palidrome(number);
+    Console.WriteLine(palidrome ? "Число является палидромом." : "Число не является палидромом.");
 }
+
+
+
+
 
 
 

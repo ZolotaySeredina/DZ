@@ -5,11 +5,11 @@ A (7,-5, 0); B (1,-1,9) -> 11.53 */
 
 double Distance(int x1, int y1, int z1, int x2, int y2, int z2)
 {
-int side1 = x1 - x2 ;
-int side2 = y1 - y2 ;
-int side3 = z1 - z2 ;
-double distance = Math.Sqrt(side1 * side1 + side2 * side2 + side3 * side3);
-return distance;
+    int side1 = x1 - x2;
+    int side2 = y1 - y2;
+    int side3 = z1 - z2;
+    double distance = Math.Sqrt(side1 * side1 + side2 * side2 + side3 * side3);
+    return distance;
 }
 
 Console.WriteLine("Введите координаты 1 точки");

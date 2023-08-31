@@ -1,9 +1,9 @@
 ﻿double Distance(int x1, int y1, int x2, int y2)
 {
-int side1 = x1 - x2;
-int side2 = y1 - y2;
-double distance = Math.Sqrt(side1 * side1 + side2 * side2);
-return distance;
+    int side1 = x1 - x2;
+    int side2 = y1 - y2;
+    double distance = Math.Sqrt(side1 * side1 + side2 * side2);
+    return distance;
 }
 
 Console.WriteLine("Введите координаты 1 точки");
