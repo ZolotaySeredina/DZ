@@ -35,17 +35,17 @@ void PrintMatrix(int[,] matrix)
 
 void average(int[,] matrix)
 {
-Console.Write("Среднее арифметическое каждого столбца: ");
-double result = 0.0;
+    Console.Write("Среднее арифметическое каждого столбца: ");
+    double result = 0;
     double sum = 0;
     for (int i = 0; i < matrix.GetLength(1); i++)
     {
         for (int j = 0; j < matrix.GetLength(0); j++)
         {
             sum += matrix[j, i];
-            result = sum/matrix.GetLength(0);
+            result = sum / matrix.GetLength(0);
         }
-            Console.Write($"{result:F1}, ");
+        Console.Write($"{result:F1}, ");
 
     }
 
